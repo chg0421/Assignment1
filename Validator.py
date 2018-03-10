@@ -23,7 +23,7 @@ class Validator:
 
 
 test = Validator
-test.validate_bmi(View.input("Enter Employee BMI"))
-test.validate_sales(View.input("Enter Employee Sales"))
+test.validate_bmi(input("Enter Employee BMI"))
+test.validate_sales(input("Enter Employee Sales"))
 
 

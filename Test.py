@@ -1,3 +1,25 @@
+import time as t
+from os import path
+
+
+def create_file(dest):
+
+    """ The script create a text file at the passed in location name file based on date"""
+    date = t.localtime(t.time())
+    #file name = month_day_year
+
+    name = "{:d}{:d}{:d}.txt".format(date[1],date[2],(date[0]%100))
+    if not (path.isfile(dest +name)):
+        f = open(dest +name,'w')
+        f.write("derewrewrweerwe")
+        f.close()
+
+if __name__ == '__main__':
+    destination ="F:\Ara3\Python\Assignment\test_save"
+    create_file(destination)
+    input("File Saved!!!")
+
+
 """ x = 5
 if x < 5:
     print("x is less than 5")

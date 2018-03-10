@@ -1,8 +1,4 @@
 import plotly.offline as pf
-# import plotly.plotly as py
-# import plotly.graph_objs as go
-# import matplotlib.pyplot as plt
-
 import matplotlib.pyplot as plt
 
 # our X values:
